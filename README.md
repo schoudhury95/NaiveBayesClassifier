@@ -14,11 +14,11 @@ The NaiveBayesClassifier.java is the heart of the project, it goes through:
 
 
 Makefile:
-|Command| What it does|
-|:---|:---|
-|make			|compiles the java file|
-|make run		|runs the java file with specific inputs|
-|make clean		|cleans up the files that were created by running make|
-|make execute	|compares the files that were made with make through a validator // read validate_readme.txt|
+| Command | What it does |
+| :--- | :--- |
+| make			| compiles the java file |
+| make run		| runs the java file with specific inputs |
+| make clean		| cleans up the files that were created by running make |
+| make execute	| compares the files that were made with make through a validator // read validate_readme.txt |
 
 That is the basis of the project. For information on the project read MP1.pdf or mp1_presentation.pdf
