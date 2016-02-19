@@ -1,8 +1,8 @@
 all:
-	javac NaiveBayesClassifier.java
+	javac *.java
 run:
-	java NaiveBayesClassifier testing.txt testing.txt > output.txt
+	java NaiveBayesClassifier training.txt testing.txt #> output.txt
 clean:
-	rm NaiveBayesClassifier.class output.txt
+	rm *.class output.txt
 execute:
 	java NaiveBayesClassifier training.txt testing.txt | java -jar validate.jar
