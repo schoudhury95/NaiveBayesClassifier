@@ -1,13 +1,8 @@
-import java.io.*;
-import java.util.regex.*;
-import java.util.*;
-
 class NaiveBayesClassifier{
 
 	private static int sentiment;
 	private static String review;
-
-	public static void main(String[] args) throws IOException{
+/*	public static void main(String[] args) throws IOException{
 		List<Integer> r = new ArrayList<Integer>(); // trainig set
 		List<Integer> s = new ArrayList<Integer>(); // testing set
 		List<Integer> c1 = new ArrayList<Integer>(); // testing set
@@ -53,7 +48,7 @@ class NaiveBayesClassifier{
 
 		int count;
 		int match;
-		/*** TODO: use Bayesian Model Here, and Dynamically update accuracy ***/
+		** TODO: use Bayesian Model Here, and Dynamically update accuracy **
         while (null != (line = br.readLine())) {
             Matcher m = p.matcher(line);
             if (m.matches()) {
@@ -68,14 +63,14 @@ class NaiveBayesClassifier{
 		// closes the buffered reader permanently
         br.close();
 
-		/*** TODO: print accuracy calculations below and format output correctly ***/
+		** TODO: print accuracy calculations below and format output correctly **
 		// check the pdf for more info on how to do this
-		/**
+		*
 			The psuedocode:
 			if link1 == link2 then count up with acc++
 
 			finally acc/total;
-		**/
+		*
 		Integer[] sArr = new Integer[s.size()];
 		Integer[] rArr = new Integer[r.size()];
 
@@ -107,5 +102,5 @@ class NaiveBayesClassifier{
 		System.out.println(accuracy2 + " (training)");
 		System.out.println(accuracy1 + " (testing)");
 
-	}
+	}*/
 }
