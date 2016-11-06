@@ -16,19 +16,6 @@ public class NaiveBayesView extends JFrame {
 
     NaiveBayesView() {
 
-        NBpanel = new JPanel();
-
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(600, 800);
-        NBpanel.add(writeNameOfTrainingTextField);
-        NBpanel.add(trainButton);
-        NBpanel.add(testButton);
-        NBpanel.add(accuracyUpdatedHereFormattedTextField);
-        NBpanel.add(getAccuracyButton);
-        NBpanel.add(writeNameOfTestingTextField);
-
-        this.add(NBpanel);
-
         trainButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
