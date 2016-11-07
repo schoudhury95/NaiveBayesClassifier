@@ -1,28 +1,27 @@
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 /**
  * Created by Subhodeep on 10/27/2016.
  */
 public class NaiveBayesView extends JFrame {
     public JPanel NBpanel;
-    private JTextField writeNameOfTrainingTextField = new JTextField(20);
-    private JButton trainButton = new JButton("Train");
-    private JButton testButton = new JButton("Test");
-    private JFormattedTextField accuracyUpdatedHereFormattedTextField = new JFormattedTextField(10);
-    private JButton getAccuracyButton = new JButton("Get Accuracy");
-    private JTextField writeNameOfTestingTextField = new JTextField(20);
+    private JTextField trainingTestField;
+    private JButton trainButton;
+    private JButton testButton;
+    private JFormattedTextField accuracyUpdatedHereFormattedTextField;
+    private JButton getAccuracyButton;
+    private JTextField writeNameOfTestingTextField;
 
-    NaiveBayesView() {
+    public NaiveBayesView() {
+//        Kept Here for anything we may need to initialize
+    }
 
-        trainButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "HelloWorld!");
-            }
-        });
+    public JButton getTrainingButton() {
+        return this.trainButton;
+    }
 
+    public JTextField getTrainingTextField(){
+        return this.trainingTestField;
     }
 
 }

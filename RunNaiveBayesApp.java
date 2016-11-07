@@ -11,10 +11,12 @@ public class RunNaiveBayesApp {
         NaiveBayesController NBC = new NaiveBayesController(NBV, NBM);
 
         JFrame NBView = new JFrame("NaiveBayesView");
-        NBView.setContentPane(new NaiveBayesView().NBpanel);
+        NBView.setContentPane(NBV.NBpanel);
         NBView.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         NBView.pack();
         NBView.setVisible(true);
+
+        NBC.init();
 
     }
 }
