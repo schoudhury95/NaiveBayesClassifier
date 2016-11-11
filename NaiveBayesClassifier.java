@@ -2,8 +2,32 @@ class NaiveBayesClassifier{
 
 	private static int sentiment;
 	private static String review;
+	private static String trainFile;
+	private static String testFile;
+	private static double accuracy = 0.9837; // dummy value change to zero later
+
+	public static double getAccuracy() {
+		return accuracy;
+	}
+
+	public static String getTrainFile() { // possible deprecation
+		return trainFile;
+	}
+
+	public static void setTrainFile(String tf) {
+		trainFile = tf;
+	}
+
+	public static String getTestFile() { // possible deprecation
+		return testFile;
+	}
+
+	public static void setTestFile(String tf) {
+		testFile = tf;
+	}
+
 /*	public static void main(String[] args) throws IOException{
-		List<Integer> r = new ArrayList<Integer>(); // trainig set
+		List<Integer> r = new ArrayList<Integer>(); // training set
 		List<Integer> s = new ArrayList<Integer>(); // testing set
 		List<Integer> c1 = new ArrayList<Integer>(); // testing set
 		List<Integer> c2 = new ArrayList<Integer>(); // testing set

@@ -18,13 +18,23 @@ public class NaiveBayesController {
     public void init() {
         /*<===  set up the listeners below ===>*/
 //        get the buttons
-        NBV.getTrainingButton().addActionListener(e -> setTrainValueFromField());
-
+        NBV.getTrainingButton().addActionListener(e -> setTrainFileFromField());
+        NBV.getTestButton().addActionListener(e -> setTestValueFromField());
+        NBV.getAccuracyButton().addActionListener(e -> setAccuracyValueFromModel());
     }
 
-    private void setTrainValueFromField(){
+    private void setTrainFileFromField() {
         /* <=== The point is to create a training value straight from the JTextField ===>*/
-        String text = NBV.getTrainingTextField().getText();
-        JOptionPane.showMessageDialog(null,text);
+        JOptionPane.showMessageDialog(null,NBV.getTrainingTextField().getText());
+    }
+
+    private void setTestValueFromField() {
+        /* <=== The point is to create a test value straight from the JTextField ===>*/
+        JOptionPane.showMessageDialog(null, NBV.getTestFile().getText());
+    }
+
+    private void setAccuracyValueFromModel(){
+        /* <=== The point is to update the accuracy straight from the Model ===>*/
+        NBV.setAccuracy(Double.toString(NBM.getAccuracy())); // set accuracy of the view to the accuracy of the model
     }
 }
